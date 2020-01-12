@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerDesignLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DesignRegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/ActionBarRegisterDesign"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backToDesignListButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/image_back_34dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="210dp"
+            android:layout_marginStart="210dp"
+            android:gravity=""
+            android:text="설계도 등록"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="설계도 코드 : "
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/designCodeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="start"
+            android:hint="설계도 코드를 입력하세요"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#696969"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="사용되는 금형(히팅 횟수)"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ScrollView
+            android:id="@+id/designRegisterScrollView"
+            android:layout_width="400dp"
+            android:layout_height="500dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="A-SQ :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/a_sq_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="end"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="A-RO :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/a_ro_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="A-OB-W :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/a_ob_w_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="A-OB-H :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/a_ob_h_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="A-CP :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/a_cp_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="A-SP :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/a_sp_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="A-RE-W :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/a_re_w_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="A-RE-H :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/a_re_h_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="B-OB-H :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/b_ob_h_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="B-RE-W :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/b_re_w_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="B-RE-H :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/b_re_h_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="B-RO :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/b_ro_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="B-SQ :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/b_sq_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="B-SQ-D :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/b_sq_d_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="B-CR :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/b_cr_HittingTimeEditText"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="C-CR :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/c_cr_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="C-OB-W :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/c_ob_w_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="C-OB-H :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/c_ob_h_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="C-SP :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/c_sp_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="C-RR :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/c_rr_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="D-RE-W :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/d_re_w_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="D-RE-H :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/d_re_h_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="E-RE-W :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/e_re_w_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="E-RE-H :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/e_re_h_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="G-CR :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/g_cr_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="G-RE-W :"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/g_re_w_HittingTimeEditText"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="right"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="10dp"
+                        android:text="회"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="판 당 생산시간 : "
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/productTimeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="start"
+            android:hint="예) 300"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#707070"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="초"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <RadioGroup
+            android:id="@+id/metalSheetTypeRadioGroup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/type1.6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="1.6T"
+                android:textSize="27sp" />
+
+            <RadioButton
+                android:id="@+id/type2.0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2T"
+                android:textSize="27sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/designRegisterFinalButton"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="등록하기"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ikjoon.moldmanagement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionbar">
+        <activity android:name=".LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InputProductionInfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DesignListActivity" />
+        <activity android:name=".DesignRegisterActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ProductionHistoryActivity" />
+        <activity android:name=".UsageStatusActivity" />
+        <activity android:name=".MoldBreakageHistoryActivity" />
+        <activity android:name=".UsageStatusDetailActivity" />
+        <activity android:name=".ShowProductInfoActivity" />
+        <activity android:name=".MoldRecommendActivity" />
+        <activity
+            android:name=".MoldAlertActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".RegisterBrokenMoldActivity" />
+        <activity android:name=".ShowNowMoldActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+    </application>
+
+</manifest>

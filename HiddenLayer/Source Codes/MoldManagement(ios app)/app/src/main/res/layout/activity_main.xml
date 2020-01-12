@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/navigationBarMain"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/warningAlertImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/image_notification">
+
+                </ImageButton>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="메인 화면"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nowMoldButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="현재 사용 금형"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/inputProductionQuantityButton"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/image_input_production_info"
+                    android:drawableStart="@drawable/image_input_production_info"
+                    android:padding="10dp"
+                    android:text="생산량 입력"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/designButton"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/image_design"
+                    android:drawableStart="@drawable/image_design"
+                    android:padding="10dp"
+                    android:text="설계도"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/productionHistoryButton"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/image_history"
+                    android:drawableStart="@drawable/image_history"
+                    android:padding="10dp"
+                    android:text="생산히스토리"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/usageStatusButton"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/image_status"
+                    android:drawableStart="@drawable/image_status"
+                    android:padding="10dp"
+                    android:text="금형 사용 현황"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/moldRecommendButton"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/image_add"
+                    android:drawableStart="@drawable/image_add"
+                    android:padding="10dp"
+                    android:text="금형 추천"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/brokenMoldButton"
+                    android:layout_width="280dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorPrimary"
+                    android:drawableLeft="@drawable/image_mold_broken"
+                    android:drawableStart="@drawable/image_mold_broken"
+                    android:padding="10dp"
+                    android:text="금형 파손 히스토리"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/pos_view" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</RelativeLayout>

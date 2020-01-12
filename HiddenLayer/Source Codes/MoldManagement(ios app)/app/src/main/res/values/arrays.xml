@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="moldList">
+        <item>A_SQ</item>
+        <item>A_RO</item>
+        <item>A_OB_W</item>
+        <item>A_OB_H</item>
+        <item>A_CP</item>
+        <item>A_SP</item>
+        <item>A_RE_W</item>
+        <item>A_RE_H</item>
+        <item>B_OB_H</item>
+        <item>B_RE_W</item>
+        <item>B_RE_H</item>
+        <item>B_RO</item>
+        <item>B_SQ</item>
+        <item>B_SQ_D</item>
+        <item>B_CR</item>
+        <item>C_CR</item>
+        <item>C_OB_W</item>
+        <item>C_OB_H</item>
+        <item>C_SP</item>
+        <item>C_RR</item>
+        <item>D_RE_W</item>
+        <item>D_RE_H</item>
+        <item>E_RE_W</item>
+        <item>E_RE_H</item>
+        <item>G_CR</item>
+        <item>G_RE_W</item>
+    </string-array>
+</resources>

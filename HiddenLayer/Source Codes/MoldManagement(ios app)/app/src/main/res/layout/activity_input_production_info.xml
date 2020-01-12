@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InputProductionInfoActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ActionBarProductInfo"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backToMain1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/image_back_34dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="210dp"
+            android:layout_marginStart="210dp"
+            android:gravity=""
+            android:text="생산정보 입력"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/inputProductionInfoRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textDesign"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/designSpinner"
+            android:layout_toLeftOf="@+id/designSpinner"
+            android:layout_toStartOf="@+id/designSpinner"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/image_design_24dp"
+            android:drawableStart="@drawable/image_design_24dp"
+            android:padding="10dp"
+            android:text="  설 계 도 :"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/designSpinner"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="164dp"
+            android:layout_marginRight="164dp"
+            android:layout_marginTop="141dp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffffff"
+            android:textSize="24sp">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/textProductAmount"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/productAmountEditText"
+            android:layout_toLeftOf="@+id/productAmountEditText"
+            android:layout_toStartOf="@+id/productAmountEditText"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/image_production_quantity"
+            android:drawableStart="@drawable/image_production_quantity"
+            android:padding="10dp"
+            android:text="  생 산 량 :"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/productAmountEditText"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="238dp"
+            android:layout_toEndOf="@+id/textDesign"
+            android:layout_toRightOf="@+id/textDesign"
+            android:background="@color/colorPrimary"
+            android:hint="단위 : ea"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textDatePicker"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="329dp"
+            android:layout_toLeftOf="@+id/designSpinner"
+            android:layout_toStartOf="@+id/designSpinner"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_calender_24dp"
+            android:drawableStart="@drawable/ic_calender_24dp"
+            android:padding="10dp"
+            android:text=" 생산날짜 :"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/dateInputButton"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/textDatePicker"
+            android:layout_toEndOf="@+id/textDesign"
+            android:layout_toRightOf="@+id/textDesign"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="날짜"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textTimePicker"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/textDesign"
+            android:layout_alignStart="@+id/textDesign"
+            android:layout_alignTop="@+id/timeInputButton"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/image_time_start_product"
+            android:drawableStart="@drawable/image_time_start_product"
+            android:padding="10dp"
+            android:text=" 생산시간 :"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/timeInputButton"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="420dp"
+            android:layout_toEndOf="@+id/textDesign"
+            android:layout_toRightOf="@+id/textDesign"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="시간"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/dayOrNightRadioGroup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="526dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/dayRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="주간"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/nightRadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="야간"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/enterProductInformation"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="445dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="확인"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
